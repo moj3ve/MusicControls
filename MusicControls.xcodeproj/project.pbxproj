@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0131AC0B24C52F9300BC7875 /* InternalNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0131AC0A24C52F9300BC7875 /* InternalNotification.swift */; };
 		01E05CA324C3435900F5F99E /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E05CA224C3435900F5F99E /* Music.swift */; };
 		01E05CA524C3439900F5F99E /* PlayerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E05CA424C3439900F5F99E /* PlayerState.swift */; };
 		01E05CA724C343B900F5F99E /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E05CA624C343B900F5F99E /* Track.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0131AC0A24C52F9300BC7875 /* InternalNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalNotification.swift; sourceTree = "<group>"; };
 		01E05C8824C3428200F5F99E /* MusicControls.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MusicControls.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		01E05C8C24C3428200F5F99E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01E05CA224C3435900F5F99E /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 				01E05CA224C3435900F5F99E /* Music.swift */,
 				01E05CA424C3439900F5F99E /* PlayerState.swift */,
 				01E05CA624C343B900F5F99E /* Track.swift */,
+				0131AC0A24C52F9300BC7875 /* InternalNotification.swift */,
 				01E05C8C24C3428200F5F99E /* Info.plist */,
 			);
 			path = MusicControls;
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				01E05CA524C3439900F5F99E /* PlayerState.swift in Sources */,
+				0131AC0B24C52F9300BC7875 /* InternalNotification.swift in Sources */,
 				01E05CA324C3435900F5F99E /* Music.swift in Sources */,
 				01E05CA724C343B900F5F99E /* Track.swift in Sources */,
 			);

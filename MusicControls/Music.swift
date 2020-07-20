@@ -29,6 +29,7 @@ open class MusicControls: NSObject {
             case .playing:
                 _ = MusicControls.executeAppleScriptWithString("play")
             }
+        NotificationCenter.default.post(name: Notification.Name(rawValue: InternalNotification.key), object: self)
         }
     }
     
@@ -36,11 +37,13 @@ open class MusicControls: NSObject {
     public static func playNext(_ completionHandler: (()->())? = nil){
         _ = MusicControls.executeAppleScriptWithString("play (next track)")
         completionHandler?()
+        NotificationCenter.default.post(name: Notification.Name(rawValue: InternalNotification.key), object: self)
     }
     
     public static func playPrevious(_ completionHandler: (() -> ())? = nil){
         _ = MusicControls.executeAppleScriptWithString("play (previous track)")
         completionHandler?()
+        NotificationCenter.default.post(name: Notification.Name(rawValue: InternalNotification.key), object: self)
     }
     
     
@@ -54,12 +57,14 @@ open class MusicControls: NSObject {
         }
         _ = MusicControls.startMusic(option: option)
         completionHandler?()
+        NotificationCenter.default.post(name: Notification.Name(rawValue: InternalNotification.key), object: self)
     }
     
     
     public static func activateMusic(completionHandler: (() -> ())? = nil){
         _ = MusicControls.activateMusic()
         completionHandler?()
+        NotificationCenter.default.post(name: Notification.Name(rawValue: InternalNotification.key), object: self)
     }
     
     static func executeAppleScriptWithString(_ command: String) -> String? {
